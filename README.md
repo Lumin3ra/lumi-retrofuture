@@ -38,7 +38,7 @@ this is a fork of a linux rice created by diinki
 ## 📌 Installation Steps
 
 1. `Installation`
-   - Run `sudo pacman -S wofi waybar nemo nautilus kitty vscode fastfetch pavucontrol hyprpolkitagent hyprshot` in your terminal.
+   - Run `sudo pacman -S wofi waybar nemo nautilus kitty vscode fastfetch pavucontrol hyprpolkitagent hyprshot hyprwat` in your terminal.
    - Run `yay eww` in your terminal (you will need to install yay).
    - Install the [Maple Mono font](https://github.com/subframe7536/Maple-font), as this font is used a lot in this Linux rice. Move the font-file to `/usr/share/fonts`, then run `fc-cache -f -v` to update the fonts.
    - Run `git clone https://github.com/Lumin3ra/diinki-retrofuture` to clone this repo, or install it from the Releases section.

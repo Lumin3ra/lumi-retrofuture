@@ -31,6 +31,10 @@ window#waybar {
   transition-duration: 120ms;
 }
 #tray {
+  border-radius: 8px;
+  margin-right: 6px;
+}
+#network {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -38,10 +42,15 @@ window#waybar {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+#battery {
+  border-radius: 8px;
+  margin-left: 6px;
+}
 
 /*middle modules*/
 #custom-applauncher,
-#clock {
+#clock,
+#clock#date {
   background-image: linear-gradient(to bottom, #141216 100%);
 
   margin: 6px;
@@ -59,8 +68,8 @@ window#waybar {
   border-bottom-left-radius: 8px;
 }
 #clock {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-radius: 8px;
+  margin-right: 6px;
 }
 
 
@@ -79,6 +88,11 @@ window#waybar {
 }
 
 #pulseaudio:hover {
+  background-image: linear-gradient(to bottom, #ac82e9 100%);
+  color: #141216;
+  transition-duration: 120ms;
+}
+#network:hover {
   background-image: linear-gradient(to bottom, #ac82e9 100%);
   color: #141216;
   transition-duration: 120ms;

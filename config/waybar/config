@@ -55,7 +55,8 @@
     "format-ethernet": "󰈀 {bandwidthDownBits}",
     "format-disconnected": "󰤭 No Network",
     "interval": 5,
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "hyprwat --wifi"
   },
   "pulseaudio": {
     "scroll-step": 5,
@@ -87,8 +88,8 @@
     ],
     "nospacing": 1,
     "format-muted": " ",
-    "on-click": "hyprwat --audio", /*python ~/Documents/soundcontrol.py*/
-    "on-click-middle": "pavucontrol",   /*57 is headset and 68 is monitor*/
+    "on-click": "python ~/.config/waybar/scripts/soundcontrol.py",
+    "on-click-middle": "pavucontrol",
     "tooltip": 1
   },
   "battery": {

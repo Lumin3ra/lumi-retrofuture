@@ -8,7 +8,4 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
-
-if [[ $(tty) == *"pts"* ]]; then
-    fastfetch --config examples/13
-fi
+fastfetch -c examples/13

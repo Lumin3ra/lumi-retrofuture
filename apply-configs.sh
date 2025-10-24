@@ -1,2 +1,2 @@
-cp ./config/* ~/.config/
+cp -r ./config/* ~/.config/
 cp ./.bashrc ~/.bashrc

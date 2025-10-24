@@ -19,6 +19,8 @@
     "tray",
     "network",
     "pulseaudio",
+    "bluetooth",
+    "power-profiles-daemon",
     "battery"
   ],
   "hyprland/workspaces": {
@@ -51,7 +53,7 @@
     "tooltip": false
   },
   "clock#date": {
-    "format": " {:%a %D}",
+    "format": " {:%a %d.%m.%Y}",
     "tooltip": false
   },
   "network": {
@@ -92,7 +94,7 @@
     ],
     "nospacing": 1,
     "format-muted": " ",
-    "on-click": "hyprwat --audio",
+    "on-click": "python ~/.config/waybar/scripts/soundcontrol.py",
     "on-click-middle": "pavucontrol",
     "tooltip": 1
   },
@@ -103,7 +105,7 @@
     },
     "format": "{icon} {capacity}%",
     "format-charging": "󰂄 {capacity}%",
-    "format-plugged": "󰂄{capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
     "format-alt": "{icon} {time}",
     "format-full": "󱈑 {capacity}%",
     "format-icons": [
@@ -111,5 +113,40 @@
       "󱊢",
       "󱊣"
     ]
+  },
+  "bluetooth": {
+	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+	"format": " {status}",
+	"format-disabled": "", // an empty format will hide the module
+	"format-connected": " {num_connections} connected",
+	"tooltip-format": "{controller_alias}\t{controller_address}",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+  "on-click": "kitty bluetui"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+  "cpu": {
+     "interval": 1,
+     "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}",
+     "format-icons": [
+          "<span color='#69ff94'>▁</span>", // green
+          "<span color='#2aa9ff'>▂</span>", // blue
+          "<span color='#f8f8f2'>▃</span>", // white
+          "<span color='#f8f8f2'>▄</span>", // white
+          "<span color='#ffffa5'>▅</span>", // yellow
+          "<span color='#ffffa5'>▆</span>", // yellow
+          "<span color='#ff9977'>▇</span>", // orange
+          "<span color='#dd532e'>█</span>"  // red
+     ]
   }
 }

@@ -1,2 +1,2 @@
-mv ./config/* ~/.config/
-mv ./.bashrc ~/.bashrc
+cp ./config/* ~/.config/
+cp ./.bashrc ~/.bashrc

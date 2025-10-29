@@ -9,83 +9,24 @@
 
 window#waybar {
   /* Linear gradients are used because it makes less harsh rounded border radius, gtk bug :p */
-  background: transparent;
+  background-image: linear-gradient(to bottom, #141216 100%);
+  border-radius: 14px;
   padding: 0px;
+  border-style: none;
 }
 
-/*right modules*/
 #battery,
 #network,
-#tray,
-#pulseaudio,
-#bluetooth,
-#power-profiles-daemon {
-  background-image: linear-gradient(to bottom, #141216 100%);
-
-  margin: 6px;
-  margin-right: 0;
-  margin-left: 0;
-  padding: 6px 8px;
-  border-radius: 0;
-  color: #d8cab8;
-
-  border-style: none;
-  transition-duration: 120ms;
-}
-#tray {
-  border-radius: 8px;
-  margin-right: 6px;
-}
-#network {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-#bluetooth {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-#battery {
-  border-radius: 8px;
-  margin-left: 6px;
-}
-#power-profiles-daemon {
-  border-radius: 8px;
-  margin-left: 6px;
-}
-
-/*middle modules*/
-#custom-applauncher,
 #clock,
-#clock#date {
-  background-image: linear-gradient(to bottom, #141216 100%);
-
-  margin: 6px;
-  margin-right: 0;
-  margin-left: 0;
-  padding: 6px 8px;
-  border-radius: 0;
-  color: #d8cab8;
-
-  border-style: none;
-  transition-duration: 120ms;
-}
-#custom-applauncher {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-#clock {
-  border-radius: 8px;
-  margin-right: 6px;
-}
-
-
-
-#workspaces {
-  background-image: linear-gradient(to bottom, #141216 100%);
+#custom-applauncher,
+#tray,
+#workspaces,
+#pulseaudio {
+  background-image: linear-gradient(to bottom, #27232b 100%);
 
   margin: 6px;
   margin-right: 0px;
-  padding: 6px 8px;
+  padding: 4px 8px;
   border-radius: 8px;
   color: #d8cab8;
 
@@ -93,9 +34,17 @@ window#waybar {
   transition-duration: 120ms;
 }
 
-#pulseaudio:hover,
-#network:hover,
-#bluetooth:hover {
+#clock {
+  margin-right: 6px;
+}
+
+#pulseaudio:hover {
+  background-image: linear-gradient(to bottom, #ac82e9 100%);
+  color: #141216;
+  transition-duration: 120ms;
+}
+
+#network:hover {
   background-image: linear-gradient(to bottom, #ac82e9 100%);
   color: #141216;
   transition-duration: 120ms;
@@ -159,11 +108,11 @@ window#waybar {
 
 #battery {
   background-color: #222222;
-  color: #d8cab8;
+  color: #1d2021;
 }
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-  color: #d8cab8;
+  color: #1d2021;
   background-color: #fc4649;
 }

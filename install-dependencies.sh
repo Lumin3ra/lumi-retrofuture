@@ -3,4 +3,4 @@ sudo pacman -S hyprpaper kitty waybar wob wofi yazi hyprpolkitagent nemo nautilu
 #install yay
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 #install AUR stuff
-yay -S eww hyprwat walker elephant
+yay -S eww hyprwat walker elephant maplemono-ttf

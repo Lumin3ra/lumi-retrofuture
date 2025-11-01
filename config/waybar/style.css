@@ -20,7 +20,7 @@ window#waybar {
 #pulseaudio,
 #bluetooth,
 #power-profiles-daemon {
-  background-image: linear-gradient(to bottom, #141216 100%);
+  background-color: #141216;
 
   margin: 6px;
   margin-right: 0;
@@ -157,11 +157,6 @@ window#waybar {
   color: #fcb167;
 }
 
-#battery {
-  background-color: #222222;
-  color: #d8cab8;
-}
-#battery.warning,
 #battery.critical,
 #battery.urgent {
   color: #d8cab8;

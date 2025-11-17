@@ -13,7 +13,7 @@ window#waybar {
   padding: 0px;
 }
 
-/*right modules*/
+/* right modules */
 #battery,
 #network,
 #tray,
@@ -53,7 +53,8 @@ window#waybar {
   margin-left: 6px;
 }
 
-/*middle modules*/
+
+/* middle modules */
 #custom-applauncher,
 #clock,
 #clock#date {
